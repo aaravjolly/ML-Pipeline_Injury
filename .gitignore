@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Virtual envs
+.venv/
+venv/
+env/
+
+# Test/cache
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+
+# Trained models and figures - regenerate with scripts/train.py
+models/*.joblib
+models/*.json
+figures/*.png
+
+# Real athlete data - never commit private health info
+data/*.csv
+data/*.parquet
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Misc
+*.log
+.Rhistory
