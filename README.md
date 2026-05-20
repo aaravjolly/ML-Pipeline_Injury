@@ -34,25 +34,6 @@ injury_risk/
 └── README.md
 ```
 
-## Quick start
-
-```bash
-# 1. Install
-pip install -r requirements.txt
-
-# 2. Validate the pipeline end-to-end
-python scripts/smoke_test.py
-
-# 3. Train on synthetic data (no dataset required)
-python scripts/train.py --model gradient_boosting
-
-# 4. Predict for a single athlete-week
-python scripts/predict.py --athlete-id A0001 --week 12 --age 24 \
-    --weekly-load 2200 --sleep 6.5 --soreness 6 --rpe 7.5
-
-# 5. Or serve via FastAPI
-uvicorn src.api:app --reload
-# then visit http://127.0.0.1:8000/
 ```
 
 ## Training on real data
